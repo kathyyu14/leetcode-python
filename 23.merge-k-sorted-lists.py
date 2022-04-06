@@ -33,6 +33,9 @@ class Solution:
         '''
         优先队列 priority queue 方式来解决
         heapq 通过最小堆 放入进入二叉堆里面 通过pop出最小构造新的list
+
+        优先队列 pq 中的元素个数最多是 k 所以一次 push 或者 pop 方法的时间复杂度是 O(logk)
+        所有的链表节点都会被加入和弹出 pq 所以算法整体的时间复杂度是 O(Nlogk)，其中 k 是链表的条数 N 是这些链表的节点总数。
         '''
                 
 # @lc code=end
