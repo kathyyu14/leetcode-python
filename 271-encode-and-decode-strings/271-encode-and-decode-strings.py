@@ -19,10 +19,3 @@ class Codec:
         return res
         
         
-
-
-# Your Codec object will be instantiated and called as such:
-dummy_input = ["hee#######","2323232322222222222222222222##23232323"]
-codec = Codec()
-print(codec.encode(dummy_input))
-# codec.decode(codec.encode(strs))
