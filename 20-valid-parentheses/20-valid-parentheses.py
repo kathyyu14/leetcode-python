@@ -2,7 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
         for bracket in s:
-            if bracket in ")}]" and len(stack) != 0:
+            if bracket in ")}]" and stack:
                 d = stack.pop()
                 if bracket == ")" and d != "(":
                     return False
@@ -14,6 +14,6 @@ class Solution:
                     continue
             stack.append(bracket)
         
-        return len(stack) == 0
+        return not stack
             
                 
