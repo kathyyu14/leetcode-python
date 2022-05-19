@@ -4,7 +4,7 @@ class Solution:
         minNum = float('inf')
         
         while left <= right:
-            mid = (left + right) //2
+            mid = left + (right-left) //2
             
             if nums[left] <= nums[mid]:
                 minNum = min(nums[left], minNum)
