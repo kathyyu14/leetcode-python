@@ -13,5 +13,4 @@ class Solution:
             if second > first:
                 heapq.heappush(stones, first - second)
         
-        stones.append(0)
-        return abs(stones[0])
+        return abs(stones[0]) if stones else 0
