@@ -11,6 +11,8 @@ class Solution:
         def dfs(crs):
             if crs in visiting:
                 return False
+            if preMap[crs] == []:
+                return True
         
             visiting.add(crs)
             for pre in preMap[crs]:
