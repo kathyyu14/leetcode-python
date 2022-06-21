@@ -10,7 +10,7 @@ class Solution:
             mapT[t[i]] = mapT.get(t[i], 0) + 1
         
         for c in s:
-            if mapS.get(c) != mapT.get(c):
+            if mapS[c] != mapT.get(c):
                 return False
         
         return True
