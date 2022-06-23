@@ -1,7 +1,6 @@
 class Solution:
     def largestNumber(self, nums: List[int]) -> str:
-        for i,n in enumerate(nums):
-            nums[i] = str(n)
+        nums = list(map(str,nums))
         
         def compare(n1, n2):
             if  n1 + n2 > n2 + n1:
